@@ -45,11 +45,24 @@ const Projects = () => {
       featured: true
     },
     {
+      title: "Web3 Todo-List DApp",
+      description: [
+        "Built a full-stack decentralized application (DApp) using Solidity and React to create and manage tasks on the blockchain.",
+        "Integrated Web3 wallet connectivity with RainbowKit and wagmi, allowing for direct interaction with a smart contract deployed on the Polygon testnet.",
+        "Demonstrates the end-to-end DApp development lifecycle, from contract creation to frontend integration."
+      ],
+      image: "/6.png",
+      technologies: ["Polygon Network", "Smart Contract Development", "DApp Development", "Ethers.js", "Wagmi", "RainbowKit", "Tailwind CSS", "React.js", "Solidity", "JavaScript", "Alchemy", "MetaMask"],
+      liveUrl: "https://web3-todo-list-d-app.vercel.app/",
+      githubUrl: "https://github.com/iamkylo/Web3-Todo-List-DApp",
+      featured: true
+    },
+    {
       title: " Fill It [Web] - Smart Container Fulfillment for Logistic",
       description: "Fill It is a real-time logistics platform that connects customers with nearby drivers to fulfill partially filled liquid containers efficiently.",
       image: "/3.png",
       technologies: ["JavaScript", "Google Maps API"," HTML","CSS"],
-      liveUrl: "https://example.com",
+      liveUrl: "https://fillitcloudnexus.web.app/",
       githubUrl: "https://github.com/iamkylo/Fill-IT-Web",
       featured: false
     },
@@ -172,7 +185,7 @@ const Projects = () => {
                         View Code
                       </a>
                     </Button>
-                    {project.title === "Ethereum Wallet Balance Checker" && (
+                    {(project.title === "Ethereum Wallet Balance Checker" || project.title === "Web3 Todo-List DApp" || project.title === " Fill It [Web] - Smart Container Fulfillment for Logistic") && (
                       <Button
                         asChild
                         variant="outline"
@@ -258,7 +271,7 @@ const Projects = () => {
                           Code
                         </a>
                       </Button>
-                      {project.title === "Ethereum Wallet Balance Checker" && (
+                      {(project.title === "Ethereum Wallet Balance Checker" || project.title === "Web3 Todo-List DApp" || project.title === " Fill It [Web] - Smart Container Fulfillment for Logistic") && (
                         <Button
                           asChild
                           size="sm"
