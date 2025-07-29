@@ -119,7 +119,18 @@ const Projects = () => {
                         alt={project.title + ' screenshot'}
                         className="w-full h-full object-contain relative z-10 max-h-60 rounded shadow bg-black"
                         loading="lazy"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const nextSibling = target.nextSibling as HTMLElement;
+                          if (nextSibling) {
+                            nextSibling.style.display = 'flex';
+                          }
+                        }}
                       />
+                      <div className="w-full h-full flex items-center justify-center text-muted-foreground text-lg font-medium" style={{display: 'none'}}>
+                        {project.title}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -198,7 +209,18 @@ const Projects = () => {
                         alt={project.title + ' screenshot'}
                         className="w-full h-full object-contain relative z-10 max-h-48 rounded shadow bg-black"
                         loading="lazy"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const nextSibling = target.nextSibling as HTMLElement;
+                          if (nextSibling) {
+                            nextSibling.style.display = 'flex';
+                          }
+                        }}
                       />
+                      <div className="w-full h-full flex items-center justify-center text-muted-foreground text-sm font-medium" style={{display: 'none'}}>
+                        {project.title}
+                      </div>
                     </div>
                   </CardHeader>
                   <CardContent className="p-6">
