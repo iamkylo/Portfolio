@@ -107,7 +107,7 @@ const Skills = () => {
                 className="btn-accent focus-ring"
               >
                 <a 
-                  href="/FINAL_RESUME.pdf (1).pdf" 
+                  href="/Resume.pdf" 
                   download="Kaushik_Kumar_Sahoo_Resume.pdf"
                   className="inline-flex items-center gap-2"
                 >
