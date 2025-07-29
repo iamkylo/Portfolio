@@ -91,7 +91,7 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-         
+         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-sm text-muted-foreground">
               © {currentYear} Kaushik Kumar Sahoo. 
               <Heart className="inline h-4 w-4 text-accent mx-1" />
