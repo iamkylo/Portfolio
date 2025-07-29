@@ -32,6 +32,19 @@ const Projects = () => {
       featured: true
     },
     {
+      title: "Ethereum Wallet Balance Checker",
+      description: [
+        "A sleek, modern web application that lets users check the balance of any Ethereum wallet using Web3.js and Infura.",
+        "Built with Node.js, Express.js, and EJS templating engine for a responsive user experience.",
+        "Integrates with Infura's Ethereum RPC provider for real-time blockchain data access."
+      ],
+      image: "/5.png",
+      technologies: ["Node.js", "Express.js", "Web3.js v4+", "EJS", "Infura"],
+      liveUrl: "https://ethereum-wallet-balance-checker-app.vercel.app/",
+      githubUrl: "https://github.com/iamkylo/Ethereum-Wallet-Balance-Checker-app",
+      featured: true
+    },
+    {
       title: " Fill It [Web] - Smart Container Fulfillment for Logistic",
       description: "Fill It is a real-time logistics platform that connects customers with nearby drivers to fulfill partially filled liquid containers efficiently.",
       image: "/3.png",
@@ -148,6 +161,23 @@ const Projects = () => {
                         View Code
                       </a>
                     </Button>
+                    {project.title === "Ethereum Wallet Balance Checker" && (
+                      <Button
+                        asChild
+                        variant="outline"
+                        className="border-border hover:bg-surface focus-ring"
+                      >
+                        <a 
+                          href={project.liveUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -206,6 +236,24 @@ const Projects = () => {
                           Code
                         </a>
                       </Button>
+                      {project.title === "Ethereum Wallet Balance Checker" && (
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="outline"
+                          className="border-border hover:bg-surface focus-ring"
+                        >
+                          <a 
+                            href={project.liveUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            Demo
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
