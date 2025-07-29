@@ -1,4 +1,4 @@
-import { Heart, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,12 +27,9 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* Personal Touch */}
+            {/* Personal Info */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 rounded-radius bg-gradient-to-br from-accent to-mint flex items-center justify-center">
-                  <Heart className="h-4 w-4 text-white" />
-                </div>
                 <span className="font-semibold text-lg">Portfolio</span>
               </div>
               
@@ -43,8 +40,7 @@ const Footer = () => {
               </p>
               
               <p className="text-sm text-muted-foreground">
-                Crafted with passion using React, TypeScript, and Tailwind CSS. 
-                Built to inspire and connect.
+                Built using React, TypeScript, and Tailwind CSS.
               </p>
             </div>
 
@@ -91,16 +87,12 @@ const Footer = () => {
           </div>
 
           {/* Bottom Bar */}
-         <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <div className="pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Kaushik Kumar Sahoo. 
-              <Heart className="inline h-4 w-4 text-accent mx-1" />
-              
+              © {currentYear} Kaushik Kumar Sahoo
             </p>
             
             <div className="flex items-center space-x-4 text-xs text-muted-foreground">
-              <span></span>
-              <span>•</span>
               <span>Responsive design</span>
             </div>
           </div>
