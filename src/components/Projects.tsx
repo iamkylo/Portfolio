@@ -19,6 +19,21 @@ const Projects = () => {
       featured: true
     },
     {
+      title: "DEX's - Ethereum Fraud Detection System",
+      description: [
+        "Built a full-stack decentralized application (dApp) with a React + Vite frontend",
+        "Implemented a mempool listener using Node.js + Ethers.js to capture pending Ethereum transactions before confirmation.",
+        "Designed a feature pipeline extracting wallet addresses, gas fees, transaction values, liquidity changes, and price movements",
+        
+        //"Participated in R&D efforts to improve system scalability and data reliability."
+      ],
+      image: "/7.png",
+      technologies: ["React", "Vite", "Node.js", "Ethers.js", "Web3.js","Infura"],
+      //liveUrl: "https://example.com",
+      githubUrl: "https://github.com/iamkylo/DEX_Frontend",
+      featured: true
+    },
+    {
       title: "ISMS –  Institute Student Management System",
       description: [
         "Developed the responsive design frontend of a student management portal using HTML5, CSS3 and JavaScript.",
